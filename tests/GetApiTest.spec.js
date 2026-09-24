@@ -26,6 +26,7 @@ test("API Testing Get Practice 1 @api", async ({ request }) => {
         }
     });
     console.log(await Getresponse.json());
+    console.log(await Getresponse.text());
 
     //assert the status code
     expect(Getresponse.status()).toBe(200);
