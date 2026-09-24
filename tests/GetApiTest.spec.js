@@ -82,7 +82,7 @@ test("API Testing Get Practice 4  @api", async  ({ request }) => {
 //Approad 5: Using Base URL and headers from playwright.config.ts file
 //Curl Get Request
 test("API Testing Get Practice 5  @api", {tag: ['@api', '@smoke']}, async  ({ request }) => {
-    const Getresponse = await request.get('/booking/64');
+    const Getresponse = await request.get('/booking/15');
     console.log(await Getresponse.json());
 
     //expect(Getresponse.status()).toBe(200)
